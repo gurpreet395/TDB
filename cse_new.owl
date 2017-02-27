@@ -1,0 +1,1536 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://94d435b2.ngrok.io/ontologies/cse#"
+     xml:base="https://94d435b2.ngrok.io/ontologies/cse"
+     xmlns:cse="https://94d435b2.ngrok.io/ontologies/cse#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="https://94d435b2.ngrok.io/ontologies/cse"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Event_Hosting_Person -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Event_Hosting_Person">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Event"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Event_Location -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Event_Location">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Event"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#FacultycanBookLab -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#FacultycanBookLab">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#FacultycanBookMeetingRoom -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#FacultycanBookMeetingRoom">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Meeting_Room"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#FacultyhasLab -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#FacultyhasLab">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#FacultyhasOffice -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#FacultyhasOffice">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Office"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#RAcanBookLab -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#RAcanBookLab">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#RAhasLab -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#RAhasLab">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#StaffcanBookMeetingRoom -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#StaffcanBookMeetingRoom">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Staff"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Meeting_Room"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#StaffhasOffice -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#StaffhasOffice">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Staff"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Office"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#StudenthasResearchArea -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#StudenthasResearchArea">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Research"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#TAhasOffice -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#TAhasOffice">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#TA"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Office"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#hasLabIncharge -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#hasLabIncharge">
+        <owl:inverseOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isLabInchargeOf"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#hasResearchArea -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#hasResearchArea">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Research"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#hasResearchType -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#hasResearchType"/>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#hasStudent -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#hasStudent">
+        <owl:inverseOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isStudentOf"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#hasSupervisor -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#hasSupervisor">
+        <owl:inverseOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isSupervisorOf"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Meeting_Room"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Staff"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#hasTA -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#hasTA">
+        <owl:inverseOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isTAFor"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#TA"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#isLabInchargeOf -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#isLabInchargeOf">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#isStudentOf -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#isStudentOf">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#isSupervisorOf -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#isSupervisorOf">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Staff"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Meeting_Room"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#isTAFor -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#isTAFor">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#TA"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#isTaughtBy -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#isTaughtBy">
+        <owl:inverseOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isTeaching"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#isTeaching -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#isTeaching">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#isWorkingFor -->
+
+    <owl:ObjectProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#isWorkingFor">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Begin_Date -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Begin_Date">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Begin_Time -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Begin_Time">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#EMAIL -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#EMAIL">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#End_Date -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#End_Date">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#End_Time -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#End_Time">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Event_Name -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Event_Name">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Event_Type -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Event_Type">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#First_Name -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#First_Name">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Lab_Name -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Lab_Name">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Last_Name -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Last_Name">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Office_Hours -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Office_Hours">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#PlaceAlias -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#PlaceAlias">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Professor_Research_Description -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Professor_Research_Description">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Research_Description -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Research_Description">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Research"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Research_Name -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Research_Name">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Research"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Room_No -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Room_No">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Subject_Code -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Subject_Code">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Subject_Name -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Subject_Name">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#TA_Hours -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#TA_Hours">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#TA"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#UMBC_ID -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#UMBC_ID">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#alias -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#alias">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">personalias</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#placealias -->
+
+    <owl:DatatypeProperty rdf:about="https://94d435b2.ngrok.io/ontologies/cse#placealias">
+        <rdfs:domain rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">placealias</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Event -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Event"/>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Faculty -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Faculty">
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Lab -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Lab">
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Meeting_Room -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Meeting_Room">
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Office -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Office">
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Person -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Person">
+        <owl:disjointWith rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <owl:disjointWith rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Research"/>
+        <owl:disjointWith rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Place -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Place">
+        <owl:disjointWith rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Research"/>
+        <owl:disjointWith rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#RA -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#RA">
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Research -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Research">
+        <owl:disjointWith rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Room -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Room">
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Staff -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Staff">
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Student -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Student">
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Subject -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#TA -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#TA">
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+    </owl:Class>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person -->
+
+    <owl:Class rdf:about="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person">
+        <rdfs:subClassOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Artificial_Intelligence -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Artificial_Intelligence">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Research"/>
+        <Research_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial intelligence is the intelligence exhibited by machines.</Research_Description>
+        <Research_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Intelligence</Research_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Cynthia_Matuszek -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Cynthia_Matuszek">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <FacultycanBookLab rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE343"/>
+        <FacultycanBookMeetingRoom rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE334"/>
+        <FacultyhasLab rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE343"/>
+        <hasResearchArea rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Robotics"/>
+        <hasStudent rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Gurpreet"/>
+        <isLabInchargeOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE343"/>
+        <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cynthia,Matuszek,Cynthia Matuszek</alias>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Gurpreet -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Gurpreet">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <RAcanBookLab rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE343"/>
+        <RAhasLab rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE343"/>
+        <StudenthasResearchArea rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Robotics"/>
+        <hasResearchArea rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Robotics"/>
+        <isStudentOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Cynthia_Matuszek"/>
+        <isWorkingFor rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE343"/>
+        <First_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gurpreet</First_Name>
+        <Last_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Singh</Last_Name>
+        <UMBC_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FO09256</UMBC_ID>
+        <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gurpreet,Singh,Gurpreet Singh</alias>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#ITE327 -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#ITE327">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Office"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+        <Room_No rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITE327</Room_No>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#ITE329 -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#ITE329">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Office"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+        <Room_No rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITE329</Room_No>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#ITE332 -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#ITE332">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+        <hasLabIncharge rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Tim_Finin"/>
+        <hasResearchType rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Artificial_Intelligence"/>
+        <Lab_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EBIQUITY</Lab_Name>
+        <Room_No rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITE332</Room_No>
+        <placealias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ebiquity</placealias>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#ITE334 -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#ITE334">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Meeting_Room"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+        <hasSupervisor rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Olivia"/>
+        <Room_No rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITE332</Room_No>
+        <placealias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meeting Room</placealias>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#ITE343 -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#ITE343">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Place"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Room"/>
+        <hasLabIncharge rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Cynthia_Matuszek"/>
+        <hasResearchType rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Robotics"/>
+        <Lab_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IRAL</Lab_Name>
+        <placealias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interactive Robotics and Language Lab,IRAL</placealias>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Olivia -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Olivia">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Staff"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <StaffcanBookMeetingRoom rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE334"/>
+        <isSupervisorOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE334"/>
+        <First_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olivia</First_Name>
+        <Last_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wolfe</Last_Name>
+        <UMBC_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FO543431</UMBC_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Prajit -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Prajit">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <RAcanBookLab rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE332"/>
+        <RAhasLab rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE332"/>
+        <StudenthasResearchArea rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Artificial_Intelligence"/>
+        <hasResearchArea rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Artificial_Intelligence"/>
+        <isStudentOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Tim_Finin"/>
+        <isWorkingFor rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE332"/>
+        <First_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prajit</First_Name>
+        <Last_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Das</Last_Name>
+        <UMBC_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FO129281</UMBC_ID>
+        <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prajit, Prajit Kumar,Prajit Kumar Das</alias>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Robotics -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Robotics">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Research"/>
+        <Research_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robotics is the branch of mechanical engineering, electrical engineering and computer science that deals with the design, construction, operation, and application of robots</Research_Description>
+        <Research_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robotics</Research_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Subject1 -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Subject1">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+        <Subject_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMSC671</Subject_Code>
+        <Subject_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Intelligence</Subject_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Subject2 -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Subject2">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+        <Subject_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMSC641</Subject_Code>
+        <Subject_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Introduction to Robotics</Subject_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Subject3 -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Subject3">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject"/>
+        <hasTA rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#TA1"/>
+        <Subject_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CMSC203</Subject_Code>
+        <Subject_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Descrete Mathematics</Subject_Name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#TA1 -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#TA1">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#TA"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <isTAFor rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Subject3"/>
+        <First_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karan</First_Name>
+        <Last_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Budheraja</Last_Name>
+        <TA_Hours rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12:30-1:30</TA_Hours>
+        <UMBC_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FO08383</UMBC_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://94d435b2.ngrok.io/ontologies/cse#Tim_Finin -->
+
+    <owl:NamedIndividual rdf:about="https://94d435b2.ngrok.io/ontologies/cse#Tim_Finin">
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Person"/>
+        <rdf:type rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#UMBC_Person"/>
+        <FacultycanBookLab rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE332"/>
+        <FacultycanBookMeetingRoom rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE334"/>
+        <FacultyhasLab rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE332"/>
+        <hasResearchArea rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Artificial_Intelligence"/>
+        <hasStudent rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Prajit"/>
+        <isLabInchargeOf rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#ITE332"/>
+        <alias rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tim, FInin, Tim Finin</alias>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://94d435b2.ngrok.io/ontologies/cse#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://94d435b2.ngrok.io/ontologies/cse#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://94d435b2.ngrok.io/ontologies/cse#l">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://94d435b2.ngrok.io/ontologies/cse#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research type For Lab</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasResrachType</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Research"/>
+                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+                                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#l"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#hasResearchArea"/>
+                                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                                                <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isLabInchargeOf"/>
+                                                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                                                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#l"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#hasResearchType"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#l"/>
+                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FacultycanBookLab(?x, ?y)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isLabInchargeOf"/>
+                                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#FacultycanBookLab"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FacultyhasLab(?x, ?y)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isLabInchargeOf"/>
+                                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#FacultyhasLab"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FacultycanBookMeetingRoom(?x, ?y)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Meeting_Room"/>
+                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#FacultycanBookMeetingRoom"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Student Working For Lab</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isWorkingFor</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isStudentOf"/>
+                                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+                                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isLabInchargeOf"/>
+                                                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                                                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isWorkingFor"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">student has research area</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StudenthasResearchArea</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Student"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Faculty"/>
+                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isStudentOf"/>
+                                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Research"/>
+                                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#z"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#hasResearchArea"/>
+                                                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                                                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#z"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#StudenthasResearchArea"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RAhasLab(?x, ?y)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Lab"/>
+                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isWorkingFor"/>
+                                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RAhasLab"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StaffcanBookMeetingRoom(?x, ?y)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Staff"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#Meeting_Room"/>
+                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#StaffcanBookMeetingRoom"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RAcanBookLab(?x, ?y)</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RA"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#isWorkingFor"/>
+                                <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                                <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#RAcanBookLab"/>
+                        <swrl:argument1 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#x"/>
+                        <swrl:argument2 rdf:resource="https://94d435b2.ngrok.io/ontologies/cse#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
